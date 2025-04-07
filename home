@@ -1,1 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Diary</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        
+        body {
+            background-color: #f5f0e1;
+            font-family: 'Special Elite', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+            padding: 20px;
+        }
+        .title {
+            font-size: 2.5rem;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+        .doodle {
+            position: absolute;
+        }
+        .center-figure {
+            width: 150px;
+            position: relative;
+            margin: 20px auto;
+        }
+        .items img {
+            width: 80px;
+            position: absolute;
+        }
+        .item1 { top: 10%; left: 5%; }
+        .item2 { top: 15%; right: 5%; }
+        .item3 { bottom: 20%; left: 10%; }
+        .item4 { bottom: 15%; right: 10%; }
+        .item5 { bottom: 5%; left: 40%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">"Dear Diary"</div>
+        <img src="center-figure.png" alt="Person Figure" class="center-figure">
+        <div class="items">
+            <img src="headphones.png" alt="Headphones" class="item1">
+            <img src="film-strip.png" alt="Film Strip" class="item2">
+            <img src="cat.png" alt="Cat" class="item3">
+            <img src="camera.png" alt="Digital Camera" class="item4">
+            <img src="bracelet.png" alt="Bracelet" class="item5">
+        </div>
+    </div>
+</body>
+</html>
 
