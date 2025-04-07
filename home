@@ -46,7 +46,7 @@
 <body>
     <div class="container">
         <div class="title">"Dear Diary"</div>
-        <img src="center-figure.png" alt="Person Figure" class="center-figure">
+        <img src="https://digitaltoenail.github.io/dear-diary/images/selfimage.gif" alt="Person Figure" class="center-figure">
         <div class="items">
             <img src="headphones.png" alt="Headphones" class="item1">
             <img src="film-strip.png" alt="Film Strip" class="item2">
