@@ -21,7 +21,13 @@
             margin: auto;
             position: relative;
             padding: 30px;
+            
         }
+
+         @keyframes glitterAnimation {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+             
         .title {
             margin-bottom: 20px;
         }
@@ -58,16 +64,15 @@
             transform: scale(1.2) rotate(-5deg);
         }
 
-        .item1 { top: -10%; left: 0%; transform: translateX(-50%); }
-        .item2 { top: 0%; left: 100%; transform: translateY(-50%) translateX(-50%); }
-        .item3 { bottom: -10%; left: 0%; transform: translateX(-50%); }
-        .item4 { bottom: 0%; left: 100%; transform: translateY(-50%) translateX(-50%); }
-        .item5 { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(90deg); }
+        .item1 { top: -200px; left: 50%; transform: translateX(-50%); }
+        .item2 { top: 50%; right: -200px; transform: translateY(-50%); }
+        .item3 { bottom: -200px; left: 50%; transform: translateX(-50%); }
+        .item4 { top: 50%; left: -200px; transform: translateY(-50%); }
+        .item5 { top: 30%; left: 30%; transform: translate(-50%, -50%) rotate(90deg); }
 
         .background-texture {
             display: none;
         }
-
     </style>
 </head>
 <body>
@@ -77,12 +82,4 @@
         </div>
         <div class="items">
             <img src="https://digitaltoenail.github.io/dear-diary/images/headphones.png" alt="Headphones" class="item1">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/heart.png" alt="Heart" class="item2">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/cat.png" alt="Cat" class="item3">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/camera.png" alt="Digital Camera" class="item4">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/shoe.png" alt="Shoe" class="item5">
-        </div>
-        <img src="https://digitaltoenail.github.io/dear-diary/images/selfimage.gif" alt="Person Figure" class="center-figure">
-    </div>
-</body>
-</html>
+            <img src="https://digitaltoen
