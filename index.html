@@ -1,51 +1,67 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dear Diary</title>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Gloria+Hallelujah&display=swap');
+
         body {
-            background-color: #f5f0e1;
-            font-family: 'Special Elite', cursive;
+            background-image: url('gold-glitter.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Gloria Hallelujah', cursive;
             text-align: center;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
             position: relative;
-            padding: 20px;
+            padding: 30px;
         }
         .title {
-            font-size: 2.5rem;
-            text-decoration: underline;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
-        .doodle {
-            position: absolute;
+        .title img {
+            width: 300px;
+            transform: rotate(-2deg);
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
         }
         .center-figure {
-            width: 150px;
+            width: 180px;
             position: relative;
-            margin: 20px auto;
+            margin: 30px auto;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
         }
         .items img {
-            width: 80px;
+            width: 90px;
             position: absolute;
+            filter: drop-shadow(1px 3px 4px rgba(0,0,0,0.2));
+            transition: transform 0.3s ease;
         }
-        .item1 { top: 10%; left: 5%; }
-        .item2 { top: 15%; right: 5%; }
-        .item3 { bottom: 20%; left: 10%; }
-        .item4 { bottom: 15%; right: 10%; }
-        .item5 { bottom: 5%; left: 40%; }
+        .items img:hover {
+            transform: scale(1.2) rotate(-5deg);
+        }
+        .item1 { top: 5%; left: 5%; transform: rotate(-10deg); }
+        .item2 { top: 10%; right: 5%; transform: rotate(12deg); }
+        .item3 { bottom: 20%; left: 8%; transform: rotate(-8deg); }
+        .item4 { bottom: 15%; right: 8%; transform: rotate(8deg); }
+        .item5 { bottom: 5%; left: 45%; transform: rotate(-6deg); }
+
+        .background-texture {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="title">"Dear Diary"</div>
+        <div class="title">
+            <img src="dear-diary-title.png" alt="Dear Diary Title">
+        </div>
         <img src="https://digitaltoenail.github.io/dear-diary/images/selfimage.gif" alt="Person Figure" class="center-figure">
         <div class="items">
             <img src="headphones.png" alt="Headphones" class="item1">
