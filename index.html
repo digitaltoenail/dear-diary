@@ -8,7 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Gloria+Hallelujah&display=swap');
 
         body {
-            background-image: url('gold-glitter.gif');
+            background-image: url('your-background-image-url.jpg'); /* Insert your background image URL here */
             background-size: cover;
             background-attachment: fixed;
             font-family: 'Gloria Hallelujah', cursive;
@@ -32,12 +32,12 @@
             filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
         }
         .center-figure {
-            width: 280px;
+            width: 320px; /* Increased size of self image */
             position: relative;
             margin: 0 auto;
             z-index: 2;
             filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
-            top: -20px;
+            top: -30px; /* Moved self image slightly up */
         }
         .items {
             position: absolute;
@@ -54,10 +54,10 @@
             position: absolute;
             object-fit: contain;
             filter: drop-shadow(1px 3px 4px rgba(0,0,0,0.2));
-            transition: transform 0.2s ease; /
+            transition: transform 0.2s ease;
         }
         .items img:hover {
-            transform: scale(1.1); /
+            transform: scale(1.1); /* Slight enlargement on hover */
         }
 
         .item1 { top: 0%; left: 15%; transform: translateX(-50%) rotate(-45deg); }
