@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-     <style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Gloria+Hallelujah&display=swap');
 
         body {
@@ -27,14 +26,14 @@
             margin-bottom: 30px;
         }
         .title img {
-            width: 420px;
+            width: 700px; /
             transform: rotate(-2deg);
             filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
         }
         .center-figure {
-            width: 280px;
+            width: 320px; /
             position: relative;
-            margin: 120px auto;
+            margin: 30px auto;
             z-index: 2;
             filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
         }
@@ -58,31 +57,45 @@
             transform: scale(1.2) rotate(-5deg);
         }
 
-        /* Adjusted positions to match original inspiration without overlapping center */
+        
         .item1 { top: 60px; left: 40px; transform: rotate(-10deg); }
-        .item2 { top: 80px; right: 60px; transform: rotate(12deg); }
-        .item3 { bottom: 160px; left: 60px; transform: rotate(-8deg); }
-        .item4 { bottom: 180px; right: 80px; transform: rotate(8deg); }
-        .item5 { bottom: 60px; left: 50%; transform: translateX(-50%) rotate(-6deg); }
+        .item2 { top: 120px; right: 60px; transform: rotate(12deg); }
+        .item3 { bottom: 140px; left: 70px; transform: rotate(-8deg); }
+        .item4 { bottom: 160px; right: 80px; transform: rotate(8deg); }
+        .item5 { bottom: 80px; left: 50%; transform: translateX(-50%) rotate(-6deg); }
 
         .background-texture {
             display: none;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .title img {
+                width: 80%; /* Adjust for smaller screens */
+            }
+            .center-figure {
+                width: 250px;
+            }
+            .items img {
+                max-width: 180px;
+                max-height: 180px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/deardiary.png" alt="Dear Diary Title">
+            <img src="dear-diary-title.png" alt="Dear Diary Title">
         </div>
-        <img src="https://digitaltoenail.github.io/dear-diary/images/selfimage.gif" alt="Person Figure" class="center-figure">
         <div class="items">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/headphones.png" alt="Headphones" class="item1">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/heart.png" alt="heart" class="item2">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/cat.png" alt="Cat" class="item3">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/camera.png" alt="Digital Camera" class="item4">
-            <img src="https://digitaltoenail.github.io/dear-diary/images/shoe.png" alt="Bracelet" class="item5">
+            <img src="headphones.png" alt="Headphones" class="item1">
+            <img src="film-strip.png" alt="Film Strip" class="item2">
+            <img src="cat.png" alt="Cat" class="item3">
+            <img src="camera.png" alt="Digital Camera" class="item4">
+            <img src="bracelet.png" alt="Bracelet" class="item5">
         </div>
+        <img src="center-figure.png" alt="Person Figure" class="center-figure">
     </div>
 </body>
 </html>
